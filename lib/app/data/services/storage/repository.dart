@@ -1,10 +1,10 @@
-// import 'package:getx_todo_list/app/data/models/task.dart';
-// import 'package:getx_todo_list/app/data/providers/tasks/provider.dart';
+import 'package:todo_getx/app/data/models/task.dart';
+import 'package:todo_getx/app/data/providers/tasks/provider.dart';
 
-// class TaskRepository {
-//   TaskProvider taskProvider;
-//   TaskRepository({required this.taskProvider});
+class TaskRepository {
+  TaskProvider taskProvider;
+  TaskRepository({required this.taskProvider});
 
-//   List<Task> readTasks() => taskProvider.readTasks();
-//   void writeTasks(List<Task> tasks) => taskProvider.writeTasks(tasks);
-// }
+  List<Task> readTasks() => taskProvider.readTasks();
+  void writeTasks(List<Task> tasks) => taskProvider.writeTasks(tasks);
+}
